@@ -1,0 +1,9 @@
+.header {
+    height: 64px;
+    top: 0;
+    position: relative;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(40, 40, 40, 1) 100%);
+    color: white;
+}

@@ -1,0 +1,59 @@
+a{
+    text-decoration: none;
+}
+
+.qrCode{
+    margin: 20px;
+}
+.qrCodeError{
+    color: black;
+    margin: 56px;
+}
+
+.login-text{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+.popup-content{
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.close-button{
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
