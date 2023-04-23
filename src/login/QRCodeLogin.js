@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import API_URL from '../config';
 import QRCode from 'qrcode.react';
-import '../components/css/QRCodePopup.css'
+import '../components/Header/css/QRCodePopup.css'
 
 const apiUrl = API_URL;
 

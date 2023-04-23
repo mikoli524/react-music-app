@@ -30,6 +30,14 @@
     color: #fff;
 }
 
+.menu-item:active .item-text { 
+    transform: scale(0.992) translateY(-0.3px) translateX(-0.3px);
+}
+
+.menu-item:active .item-ico {
+    transform: scale(0.992) translateY(-0.3px) translateX(-0.3px);
+}
+
 .item-ico{
     padding-right: 14px;
 }

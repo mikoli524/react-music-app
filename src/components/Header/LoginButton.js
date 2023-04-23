@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/LoginButton.css'
+import './css/LoginButton.css'
 
 function LoginButton({ onLogin }) {
     return (

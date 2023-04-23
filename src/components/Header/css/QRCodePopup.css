@@ -28,6 +28,7 @@ a{
 
 .popup-header{
     display: flex;
+    outline: none;
     align-items: center;
     justify-content: center;
     padding: 12px 0;

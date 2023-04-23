@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactTooltip from 'react-tooltip';
-import '../css/PlayControl.css'
+import './css/PlayControl.css'
 
 function PlayControl() {
     return (

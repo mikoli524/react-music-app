@@ -4,5 +4,8 @@
             rgba(40, 40, 40, 1) 100%);
     color: white;
     height: 100%;
-    margin: 0 0 90px 265px;
+    
+    /* margin: 0 0 90px 265px; */
+    /* left: 265px;
+    bottom: 90px; */
 }
