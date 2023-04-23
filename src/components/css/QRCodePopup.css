@@ -51,9 +51,19 @@ a{
 
 .close-button{
     margin-top: 20px;
-    background-color: #f0f0f0;
-    border: none;
+    /* background-color: #f0f0f0; */
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 500px;
     padding: 5px 10px;
-    border-radius: 5px;
     cursor: pointer;
+}
+
+.close-button:hover {
+    transform: scale(1.04);
+}
+
+.close-button:active {
+    transform: scale(1);
+    background-color: darkgrey;
 }

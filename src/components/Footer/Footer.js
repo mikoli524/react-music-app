@@ -1,12 +1,12 @@
 import React from "react";
 import '../css/Footer.css'
 
-import FooterButton from "./FooterButton";
+import PlayControl from "./PlayControl";
 
 function Footer() {
     return (
         <div className="footer">
-            <FooterButton />
+            <PlayControl />
         </div>
     );
 }

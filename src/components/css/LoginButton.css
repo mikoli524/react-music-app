@@ -3,14 +3,12 @@
     justify-content: center;
     background-color: #fff;
     border: none;
-    outline: 2px solid black;
     border-radius: 500px;
     color: #000;
     cursor: pointer;
     font-size: inherit;
     font-weight: bold;
     position: absolute;
-    top: 11%;
     right: 33px;
     padding: 14px 32px;
     transition: transform 0.03s, background-color 0.3s;

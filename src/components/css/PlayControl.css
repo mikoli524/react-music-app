@@ -1,0 +1,59 @@
+.play-button {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.04);
+}
+
+.play-button:active {
+    transform: translate(-50%, -50%);
+}
+
+.play-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.prev-button,
+.next-button {
+    color: #B3B3B3;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 37%;
+    transform: translate(-50%, -50%);
+}
+
+.prev-button:hover,
+.next-button:hover {
+    color: white;
+}
+
+.prev-button:active,
+.next-button:active {
+    color: #B3B3B3;
+}
+
+.play-control-left .prev-button {
+    left: calc(50% - 40px - 16px);
+    /* 50% 减去按钮宽度的一半（8px），再减去 20px 的间距 */
+}
+
+.play-control-right .next-button {
+    left: calc(50% + 40px + 16px);
+    /* 50% 加上 20px 的间距 ，再加上16px*/
+}
