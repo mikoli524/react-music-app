@@ -1,10 +1,14 @@
 .header {
     height: 64px;
-    top: 0;
-    position: relative;
     background: linear-gradient(to bottom, #2D2D2D 0%, #171717 100%);
     background-color: rgba(45, 45, 45, 0.8);
     color: white;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0px 32px;
+}
+
+.space {
+    flex: 1;
 }

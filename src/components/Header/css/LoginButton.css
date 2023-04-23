@@ -8,11 +8,8 @@
     cursor: pointer;
     font-size: inherit;
     font-weight: bold;
-    position: absolute;
-    right: 33px;
     padding: 14px 32px;
     transition: transform 0.03s, background-color 0.3s;
-    /* 产生过渡效果 */
 }
 
 .login-button:hover {

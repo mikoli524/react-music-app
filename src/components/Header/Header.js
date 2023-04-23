@@ -5,7 +5,7 @@ import QRCodePopup from './QRCodePopup';
 import LoginButton from './LoginButton';
 
 
-function Header ({ children }) {
+function Header () {
   const [showPopup, setShowPopup] = useState(false);
 
   const handleLoginButtonClick = () => {
@@ -14,10 +14,9 @@ function Header ({ children }) {
   const handleClosePopup = () => {
     setShowPopup(false);
   }
-
     return(
         <div className="header">       
-            {children}
+            <div className='space' />
             <LoginButton onLogin={handleLoginButtonClick} />
             {showPopup && <QRCodePopup onClose={handleClosePopup} />}
         </div>

@@ -1,17 +1,6 @@
 .sidebar {
-    position: fixed;
-    /* 使 sidebar 固定在页面上 */
-    top: 0;
-    left: 0;
-    height: 100%;
-    /* 使 sidebar 高度填满整个页面 */
     width: 265px;
-    /* 设置 sidebar 的宽度 */
     background-color: rgb(0, 0, 0);
-    /* 设置背景颜色 */
-    /* padding: 78px 0 0; */
-    /* 顶部留出 Header 的空间 */
-    box-sizing: border-box;
 }
 
 .menu-item {

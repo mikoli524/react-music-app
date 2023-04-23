@@ -44,13 +44,6 @@ const QRCodeLogin = () => {
     const generateQRCode = async key => {
         try {
             const response = await axios.get(`${apiUrl}/login/qr/create?key=${key}`);
-            // const response = await axios.get(`${apiUrl}/login/qr/create?key=${key}`, {
-            //     headers: {
-            //         'Cache-Control': 'no-cache, no-store, must-revalidate',
-            //         'Pragma': 'no-cache',
-            //         'Expires': '0',
-            //     },
-            // });
         setQrUrl(response.data.data.qrurl);
         checkQRCodeStatus(key);
     } catch (error) {
