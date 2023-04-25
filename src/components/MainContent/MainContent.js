@@ -4,11 +4,13 @@ import './css/MainContent.css'
 import HomePage from './HomePage/HomePage';
 import Header from '../Header/Header';
 
-function MainContent() {
+function MainContent({ tab }) {
   return (
     <div className='main-content'>
       <Header />
-      <HomePage />
+      {tab === 'home' && <HomePage />}
+      {tab === 'search' && 'search page'}
+      {tab === 'library' && 'library page'}
     </div>
   );
 }

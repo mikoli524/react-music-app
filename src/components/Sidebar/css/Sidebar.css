@@ -1,6 +1,6 @@
 .sidebar {
     width: 265px;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }
 
 .menu-item {
@@ -15,7 +15,8 @@
     user-select: none;
 }
 
-.menu-item:hover {
+.menu-item:hover,
+.selected {
     color: #fff;
 }
 

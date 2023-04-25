@@ -1,0 +1,14 @@
+.playlist-title {
+    margin-bottom: 16px;
+}
+
+.playlist-title h2{
+    margin: 0;
+    user-select: none;
+}
+
+.playlist-row{
+    display: grid;
+    grid-template-columns: repeat(9, 180px);
+    grid-gap: 24px;
+}

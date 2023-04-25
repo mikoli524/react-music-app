@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactTooltip from 'react-tooltip';
 import './css/PlayControl.css'
 
 function PlayControl() {
@@ -11,16 +10,9 @@ function PlayControl() {
                 </button>
             </div>
 
-            <button className='play-button' data-tip="播放" data-for='play'>
+            <button className='play-button'>
                 <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" ><path fill="currentColor" d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"></path></svg>
             </button>
-            <ReactTooltip
-                className='button-tooltip'
-                id='play'
-                place='top'
-                eventOff='mouseover'
-                backgroundColor='#535353'
-            />
 
             <div className='play-control-right'>
                 <button className='next-button'>

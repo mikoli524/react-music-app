@@ -1,14 +1,41 @@
 import React from 'react'
-import PlayListShow from './PlayListRow&Title';
+import PlayListShow from './PlayListShow';
 
 import './css/HomePage.css'
 
 function HomePage() {
   return (
-    <div className='context-container'>
-      
+    <div className='home-page'>
         <PlayListShow />
-      
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <PlayListShow />
+        <>
+          <div> 
+            This is the HomePage
+          </div>
+        </>
     </div>
   );
 }
