@@ -18,15 +18,28 @@
     width: 147px;
     height: 147px;
     border-radius: 4px;
-    background-color: white;
+    background-color: transparent;
     color: black;
 }
 
-h1 {
-    margin-top: 0px;
+.playlist-cover img {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
 }
 
 .playlist-cover,
 .playlist-text {
     user-select: none;
+}
+
+.playlist-name {
+    font-weight: 700;
+    box-sizing: border-box;
+    padding-bottom: 4px;
+}
+
+.playlist-intro {
+    color: #b3b3b3;
+    font-size: 0.875rem;
 }

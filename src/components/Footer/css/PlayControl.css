@@ -12,7 +12,7 @@
     border: none;
     outline: none;
     position: relative;
-    bottom: 4px;
+    bottom: 13px;
 }
 
 .play-button, .play-button:active{
@@ -25,7 +25,7 @@
     align-items: center;
     margin: 0 20px;
     position: relative;
-    bottom: 4px;
+    bottom: 13px;
     transition: all;
     /* 添加动画 */
 }
