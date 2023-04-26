@@ -1,6 +1,6 @@
 import React from "react";
-import QRCodeLogin from "../../login/QRCodeLogin";
-import './css/QRCodePopup.css';
+import QRCodeLogin from '../login/QRCodeLogin'
+import '../login/QRCodePopup.css';
 
 const QRCodePopup = ({ onClose }) => {
     return (

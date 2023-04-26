@@ -11,7 +11,7 @@ function HomePage() {
       {tags.map((tag) => (
         <PlayListShow title={tag.name} key={tag.id} />
       ))}
-        <div className='homepage-footer'></div>
+      <div className='homepage-footer'></div>
     </div>
   );
 }

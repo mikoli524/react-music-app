@@ -14,7 +14,7 @@ function PlayListShow({ title }) {
       </div>
       <div className='playlist-row'>
         {lists.map((list) => (
-          <PlayListCard rawName={list.name} coverImgUrl={list.coverImgUrl} key={list.id} />
+          <PlayListCard rawName={list.name} coverImgUrl={list.coverImgUrl} key={list.id} id={list.id}/>
         ))}
       </div>
     </section>
