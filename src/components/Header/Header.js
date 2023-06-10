@@ -5,7 +5,7 @@ import QRCodePopup from './QRCodePopup';
 import LoginButton from './LoginButton';
 
 
-function Header () {
+function Header() {
   const [showPopup, setShowPopup] = useState(false);
 
   const handleLoginButtonClick = () => {
@@ -14,13 +14,17 @@ function Header () {
   const handleClosePopup = () => {
     setShowPopup(false);
   }
-    return(
-        <div className="header">       
-            <div className='space' />
-            <LoginButton onLogin={handleLoginButtonClick} />
-            {showPopup && <QRCodePopup onClose={handleClosePopup} />}
-        </div>
-    );
+  return (
+    <div className="header">
+      <div className='router'>
+        <button className='prev'>后退</button>
+        <button className='next'>前进</button>
+      </div>
+      <div className='space' />
+      <LoginButton onLogin={handleLoginButtonClick} />
+      {showPopup && <QRCodePopup onClose={handleClosePopup} />}
+    </div>
+  );
 }
 
 export default Header;

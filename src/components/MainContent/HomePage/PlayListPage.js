@@ -25,7 +25,7 @@ const PlayListPage = () => {
       <div className='songs'>
 
       </div> */}
-      这是歌单页面{id}
+      这是歌单页面id:{id}
     </div>
   )
 }

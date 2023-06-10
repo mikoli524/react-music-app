@@ -1,34 +1,51 @@
 import React from 'react';
 import './css/Sidebar.css'
-import Logo, { HomeLogo, SearchLogo, LibraryLogo, OnHomeLogo, OnSearchLogo, OnLibraryLogo } from './Logo';
+import Logo, { HomeLogo, SearchLogo, LibraryLogo, OnHomeLogo, OnSearchLogo, OnLibraryLogo,/* OnHomeLogo, OnSearchLogo, OnLibraryLogo*/ } from './Logo';
+import { Link, NavLink } from 'react-router-dom';
 
-function Sidebar({ setTab, tab }) {
+function Sidebar() {
     return (
-        <div className='sidebar'>
-            <div className='logo'><Logo /></div>
-
-            <div className='menu-item' onClick={() => { setTab('home') }}>
-                <span className='item-ico'>
-                    {tab === 'home' ? <OnHomeLogo /> : <HomeLogo />}
-                </span>
-                <span className={`item-text ${tab === 'home' ? 'selected' : ''}`}>主页</span>
-            </div>
-
-            <div className='menu-item' onClick={() => { setTab('search') }}>
-                <span className='item-ico'>
-                    {tab === 'search' ? <OnSearchLogo /> : <SearchLogo />}
-                </span>
-                <span className={`item-text ${tab === 'search' ? 'selected' : ''}`}>搜索</span>
-            </div>
-
-            <div className='menu-item' onClick={() => { setTab('library') }}>
-                <span className='item-ico'>
-                    {tab === 'library' ? <OnLibraryLogo /> : <LibraryLogo />}
-                </span>
-                <span className={`item-text ${tab === 'library' ? 'selected' : ''}`}>音乐库</span>
-            </div>
-        </div>
+        <nav className='sidebar'>
+            <Link to='/welcome'>
+                <div className='logo'><Logo /></div>
+            </Link>
+            <NavLink to='/home' >
+                {({ isActive }) => (
+                    <div className='menu-item'>
+                        <span className='item-ico'>
+                            {isActive ? <OnHomeLogo /> : <HomeLogo />}
+                        </span>
+                        <span className={`${({isActive}) => isActive ? 'active' : ''} item-text`}>
+                            主页
+                        </span>
+                    </div>
+                )}
+            </NavLink>
+            <NavLink to='/search' >
+                {({ isActive }) => (
+                    <div className='menu-item'>
+                        <span className='item-ico'>
+                            {isActive ? <OnSearchLogo /> : <SearchLogo />}
+                        </span>
+                        <span className={`${({isActive}) => isActive ? 'active' : ''} item-text`}>
+                            搜索
+                        </span>
+                    </div>
+                )}
+            </NavLink>
+            <NavLink to='/library' >
+                {({ isActive }) => (
+                    <div className='menu-item'>
+                        <span className='item-ico'>
+                            {isActive ? <OnLibraryLogo /> : <LibraryLogo />}
+                        </span>
+                        <span className={`${({isActive}) => isActive ? 'active' : ''} item-text`}>
+                            音乐库
+                        </span>
+                    </div>
+                )}
+            </NavLink>
+        </nav>
     );
 }
-
 export default Sidebar;

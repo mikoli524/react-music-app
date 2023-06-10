@@ -1,5 +1,5 @@
 import React from 'react'
-import { GetNameAndIntro } from '../../../Hooks/GetNameAndIntro'
+import { GetNameAndIntro } from '../../../Hooks/playlist/GetNameAndIntro'
 import { useNavigate } from 'react-router-dom';
 
 import './css/PlayListCard.css'
@@ -9,7 +9,6 @@ function PlayListCard({rawName, coverImgUrl, id}) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    console.log("list id is " + id);
     navigate(`/playlist/${id}`);
   };
 
