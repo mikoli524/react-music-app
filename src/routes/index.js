@@ -8,7 +8,7 @@ import LibraryPage from '../components/MainContent/LIbraryPage/LibraryPage';
 import Welcome from '../Welcome';
 import NotFound from '../pages/NotFound'
 
-const AppRoutes = () => {
+const MainRoutes = () => {
   return (
       
       <Routes>
@@ -23,4 +23,4 @@ const AppRoutes = () => {
   );
 }
 
-export default AppRoutes;
+export default MainRoutes;
